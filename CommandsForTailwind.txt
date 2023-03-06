@@ -1,0 +1,21 @@
+npm install -D tailwindcss postcss autoprefixer
+npx tailwind init -p
+
+In tailwind.config.cjs
+module.exports = {
+  content:["./src/**/*.{js,jsx,ts,tsx},index.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+replace this command in index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// for installing react-tilt use this command 
+npm i react-tilt --legacy-peer-deps
